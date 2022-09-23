@@ -1,0 +1,124 @@
+.post {
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.post + .post {
+    margin-top: 2rem;
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: var(--green-300);
+}
+
+.post > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post > header time {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+.post .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorInfo strong {
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.authorInfo span {
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--gray-400);
+}
+
+.commentForm {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-600);
+}
+
+.commentForm > strong {
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.commentForm textarea {
+    width: 100%;
+    background-color: var(--gray-900);
+    color: var(--gray-100);
+    line-height: 1.6;
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.commentForm footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentForm:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm button {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background: var(--green-500);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.commentForm button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.commentForm button:hover:not(:disabled) {
+    background: var(--green-300);
+}
+
+.commentList {
+    margin-top: 2rem;
+}
