@@ -1,8 +1,7 @@
-#Ignite Shop
----
+# Ignite Shop
 
 ## Iniciando projeto
-####Desenvolvimento:
+#### Desenvolvimento:
 
 ```bash
 npm run dev
@@ -10,7 +9,7 @@ npm run dev
 yarn dev
 ```
 
-####Produção:
+#### Produção:
 
 ```bash
 npm run build
@@ -20,5 +19,5 @@ yarn build
 yarn start
 ```
 
-##Demonstração
+## Demonstração
  ![Gif demontrando a navegação entre as págingas do projeto](./src/assets/ignite-shop.gif)
