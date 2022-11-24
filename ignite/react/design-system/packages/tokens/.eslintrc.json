@@ -1,0 +1,3 @@
+{
+    "extends": "@ignite-ui-sonego/eslint-config"
+}
